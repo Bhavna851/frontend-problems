@@ -1,0 +1,146 @@
+<!DOCTYPE html><!--adding css to html form-->
+<html>
+    <head>
+        <title>html form</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f7fa;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    form {
+        max-width: 400px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    div {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 70px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        width: auto;
+        margin-right: 5px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4a90e2;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #357ac9;
+    }
+</style>
+
+    </head>
+    <body>
+        <h1>Form</h1>
+        
+        <form action="/submit.ph"><!--form start from here-->
+            <div>
+                <!--input name-->
+            <label for="name">Name</label>
+             <input id="name" type="text" placeholder="Enter name" required></input>
+             </div>
+             <div>
+                <!--input phone number-->
+             <label for="phone">Phone</label>
+             <input id="phone" type="tel" placeholder="Enter phonenumber" required>
+             </div>
+             <div>
+                <!--input email-->
+             <lable for="email">Email</lable>
+             <input id="email" type="txt" placeholder="Enter email" required>
+             </div>
+             <div>
+                <!--input password-->
+            <lable for="password">Password</lable>
+             <input id="password" type="password" placeholder="Enter password" required>
+          </div>
+          <div>
+            <!--input dataofbirth-->
+            <label for="dob">Date of birth</label>
+            <input id="dob" type="date" placeholder="Date of Birth" required>
+          </div>
+          <!--dropdowm select input for gender-->
+            <div>
+                 <label for="gender">Gender</label>
+                 <select id="gender" required>
+                    <option value="disabled selected"> Enter Gender</option>
+                    <option value="male">Male</option>
+                        <option value="female">female</option>
+                        <option value="other">other</option>
+                    </select>
+            </div>
+            <!--radio buttons for subscription plan-->
+            <div>
+                <label for="subscription plan">Subscription plan</label>
+                  </div>
+                <div>
+                 <input id="basic"    type="radio" name="subscription" value="basic">
+                 <label for="basic">Basic</label>
+            
+               
+                <input id="premium" type="radio" name="subscription" value="premium">
+                <label for="premium" >Premium</label>
+
+            
+            
+                <input id="Vip" type="radio" name="subscription" value="vip">
+                <label for="vip">Vip</label>
+            </div>
+            <!--checkbox for agrreing to terms-->
+            <div>
+                <input  id="terms" type="checkbox" required>
+                 <label for="terms">I agree to the terms and condition</label>
+            </div> 
+            <!-- text area for comment -->
+            <div>
+                <label for="comment">comment box</label>
+                <textarea id="comment" placeholder="enter your comments" row="4" ></textarea>
+            </div> 
+            <!--submit button--> 
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form><!--form ends here-->
+    </body>
+</html>
