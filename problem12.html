@@ -1,0 +1,105 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Cricket score</title>
+        <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #e3f2fd;
+        margin: 0;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    table {
+        width: 60%;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 0.7s ease-in-out;
+    }
+
+    caption {
+        background: #1565c0;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 15px;
+        letter-spacing: 1px;
+    }
+
+    th {
+        background: #1976d2;
+        color: white;
+        padding: 12px;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    td {
+        padding: 12px;
+        font-size: 15px;
+        border-bottom: 1px solid #bbdefb;
+    }
+
+    tr:nth-child(even) {
+        background: #e8f1ff;
+    }
+
+    tr:hover {
+        background: #bbdefb;
+        transition: 0.3s;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+
+    </head>
+    <body>
+         <table>
+            <thead>
+            <caption>Cricket score</caption>
+              <tr>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Match</th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>Virat Kohli</td>
+                    <td>50</td>
+                    <td>T20</td>
+                </tr>
+                <tr>
+                    <td>Rohit Sharma</td>
+                    <td>56</td>
+                    <td>T20</td>
+                </tr>
+                <tr>
+                    <td>Hardik Pandya</td>
+                    <td>34</td>
+                    <td>T20</td>
+                </tr>
+                <tr>
+                    <td>Abhishek Sharma</td>
+                    <td>44</td>
+                   <td>T20</td>
+                </tr>
+                <tr>
+                    <td>Shreyas Iyer</td>
+                    <td>55</td>
+                    <td>T20</td>
+
+              </tr>
+              
+              </tbody>
+        </table>
+    </body>
+</html>
